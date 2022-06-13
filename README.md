@@ -20,7 +20,7 @@ If you have Visual Studio Code:
 
 ## Link to project
 
-[Link to project] (https://www.youtube.com “Youtube”)
+Link to project: 
 
 ### Extra info
 
@@ -32,6 +32,6 @@ You can contact me for question at thomas.vanhaute@gmail.com
 
 ### Sources
 
-(https://d3js.org/ “D3.js”)
-(https://developer.vmware.com/apis/vsphere-automation/latest/vcenter/ “vSphere API”)
-(https://bulma.io/ “Bulma”)
+D3.js: https://d3js.org/ 
+vSphere API: https://developer.vmware.com/apis/vsphere-automation/latest/vcenter/ 
+Bulma: https://bulma.io/
