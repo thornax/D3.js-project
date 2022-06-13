@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="http://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+    <script src="//d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://unpkg.com/d3@5.15.0/dist/d3.min.js"></script>
+    <meta content="utf-8" http-equiv="encoding">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>D3.js dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+
+<body>
+    <nav role="navigation" aria-label="main navigation" class="navbar is-fixed-top">
+        <div class="container is-fluid">
+            <div class="navbar-brand"><a href="#" class="navbar-item navbar-logo"><img type="img"
+                        src="img/odisee_2019_nachtblauw_rgb2.jpg" alt="Logo" /></a><a role="button" aria-label="menu"
+                    aria-expanded="false" data-target="navbarBasicExample" class="navbar-burger"><span
+                        aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start"><a href="index.html" class="navbar-item has-text-dark">
+                        Dashboard
+                    </a>
+                    <a href="info.html" class="navbar-item has-text-dark">
+                        Used topics
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons"><a href="https://www.odisee.be/"
+                                class="button is-dark is-rounded is-outlined">
+                                <b>Odisee-site</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br> <br> <br>
+    <main>
+        <section class="hero section is-block is-relative is-white is-small">
+            <div class="container">
+                <header class="has-text-centered mb-5">
+                    <h1 class="title has-text-weight-bold is-1 is-size-2-mobile is-spaced">Dashboard
+                    </h1>
+                    <p class="subtitle">Here you can see D3 driven graphs that show data from the data center of Odisee</p>
+                </header>                
+            </div>
+        </section>
+        <div class="columns">
+            <div class="column ml-3 mr-3">
+                <p class="mt-5 mb-5 has-text-centered">
+                <div class="d3chart">
+                    <H1 class="has-text-centered mt-5 mb-5">
+                        Memory usage overview from 1 hour on 13 june in KB:
+                    </H1>
+                    <div class="has-text-centered" id="wrapper1"></div>
+                </div>
+                </p>
+            </div>
+            <div class="column ml-3 mr-3">
+                <p class="mt-5 mb-5 has-text-centered">
+                <div class="d3chart">
+                    <H1 class="has-text-centered mt-5 mb-5">
+                        CPU usage overview from 1 hour on 13 june in %:
+                    </H1>
+                    <div class="has-text-centered" id="wrapper2"></div>
+                </div>
+                </p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column ml-3 mr-3">
+                <p class="mt-5 mb-5 has-text-centered">
+                <div class="d3chart">
+                    <h1 class="has-text-centered mt-5 mb-5">
+                        DISK usage overview in minutes on 13 june in KB/s:
+                    </h1>
+                    <h2 class="has-text-centered">Legend</h2>
+                    <section class="section stats">
+                        <div class="container mt-5 mb-5 pt-5 pb-5">
+                            <nav class="level is-mobile">
+                                <div class="level-item has-text-centered">
+                                    <div>
+                                        <p class="heading">value A</p>
+                                        <p class="title">Read rate</p>
+                                    </div>
+                                </div>
+                                <div class="level-item has-text-centered">
+                                    <div>
+                                        <p class="heading">value B</p>
+                                        <p class="title">Usage</p>
+                                    </div>
+                                </div>
+                                <div class="level-item has-text-centered">
+                                    <div>
+                                        <p class="heading">value C</p>
+                                        <p class="title">Write rate</p>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </section>
+                    <p class="has-text-centered">
+                        <select aria-label="State" id="selectButton"></select>
+                    </p>
+                    <div class="has-text-centered" id="wrapper3"></div>
+                </div>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/D32.js"></script>
+    <script src="js/D31.js"></script>
+    <script src="js/D33.js"></script>
+
+</body>
+
+</html>

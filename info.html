@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>D3.js dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+
+
+</head>
+
+<body>
+    <nav role="navigation" aria-label="main navigation" class="navbar is-fixed-top">
+        <div class="container is-fluid">
+            <div class="navbar-brand"><a href="#" class="navbar-item navbar-logo"><img type="img"
+                        src="img/odisee_2019_nachtblauw_rgb2.jpg" alt="Logo" /></a><a role="button" aria-label="menu"
+                    aria-expanded="false" data-target="navbarBasicExample" class="navbar-burger"><span
+                        aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start"><a href="index.html" class="navbar-item has-text-dark">
+                        Dashboard
+                    </a>
+                    <a href="info.html" class="navbar-item has-text-dark">
+                        Used topics
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons"><a href="https://www.odisee.be/"
+                                class="button is-dark is-rounded is-outlined">
+                                <b>Odisee-site</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="section is-info is-block is-relative is-medium">
+            <div class="container">
+                <header class="has-text-centered">
+                    <h1 class="title has-text-weight-bold is-3 mb-5 pb-5">Topics</h1>
+                </header>
+                <div class="columns is-centered is-variable is-4 mt-5 is-multiline">
+                    <div class="column is-4">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img type="img"
+                                        src="img/D3.png?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940"
+                                        alt="Placeholder image" id="i1z35">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">                                
+                                    <div class="media-content">
+                                        <p class="title has-text-dark is-4">D3
+                                        </p>
+                                        <p class="subtitle has-text-grey  is-6">Data Driven Documents
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.
+                                    <br><br>
+                                    Used in this project to visualize vSphere data and interact with it.
+                                    <br>
+                                    <a href="#">#HTML</a>
+                                    <a href="#">#CSS</a>
+                                    <a href="#">#SVG</a>
+                                    <a href="#">#JavaScript</a>
+                                    <a href="#">#CSV</a>                                                               
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img type="img"
+                                        src="img/vsphere.png?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940"
+                                        alt="Placeholder image" id="ih04k">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">                                
+                                    <div class="media-content">
+                                        <p class="title is-4 has-text-dark ">vSphere
+                                        </p>
+                                        <p class="subtitle has-text-grey  is-6">VMware cloud computing
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    VMware vSphere is VMware's suite of server virtualization products that includes its ESXi hypervisor and vCenter management software. VSphere undergoes periodic revisions and updates to add features, modifications to the application program interface (API) and changes to the ESXi Shell.
+                                    <br><br>
+                                    Used in this project to connect to with PowerShell and try to get data with the vSphere API.
+                                    Eventually used to export csv's with data.
+                                    <br>
+                                    <a href="#">#PowerShell</a>
+                                    <a href="#">#vSphere API</a>
+                                    <a href="#">#CSV</a>                                                               
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img type="img"
+                                        src="img/bulma.png?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940"
+                                        alt="Placeholder image" id="iuuzk">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">                                
+                                    <div class="media-content ">
+                                        <p class="title has-text-dark  is-4">Bulma
+                                        </p>
+                                        <p class="subtitle has-text-grey  is-6">@johnsmith
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    Bulma is a free, open source framework that provides ready-to-use frontend components that you can easily combine to build responsive web interfaces and can be further improved with extensions.
+                                    <br /><br />
+                                    Used in this project to build a responsive website where the D3.js charts are showed. The odisee housestyle is used to create a familiar style. The Axe Devtools are used to do Accessibility Testing that helps to improve the Accessibility.
+                                    <br>
+                                    <a href="#">#HTML</a>
+                                    <a href="#">#CSS</a>                                
+                                    <a href="#">#JavaScript</a>
+                                    <a href="#">#Axe Devtools</a>  
+                                    <br><br>                                                             
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>    
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
